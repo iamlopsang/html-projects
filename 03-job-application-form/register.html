@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="register.html">Apply</a> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">Sign Up</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Apply for a Job</h1>
+        <p>Fill out the job application form below to apply for your desired position. Please provide accurate information and upload your resume to increase your chances of being considered for the role.</p>
+
+        <form action="#" method="post">
+            <section class="one">
+                <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name: </label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="phone_number">Phone Number: </label>
+                <input type="number" id="phone_number" name="phone_number" required>
+                <br><br>
+
+                <label for="date_of_borth">Date of Birth: </label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required>
+                <br><br>
+
+                <div>
+                    <label for="gender">Gender: </label>
+                <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other" value="other">
+                </div>
+                <br><br>
+
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address" required>
+                <br><br>
+
+                <label for="city">City: </label>
+                <input type="text" id="city" name="city" required>
+                <br><br>
+
+                <label for="country">Country: </label>
+                <input type="text" id="country" name="country" required>
+                <br>
+            </fieldset>
+            </section>
+            <br>
+
+            <section class="two">
+                <fieldset>
+                    <legend>Education</legend>
+
+                    <label for="qualification">Higher Qualification: </label>
+                    <select name="qualification" id="qualification">
+                        <option value="school">High School</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                    </select>
+                    <br><br>
+
+                    <label for="institution_name">Institution Name: </label>
+                    <input type="text" name="institution_name" id="institution_name" required>
+                    <br><br>
+
+                    <label for="graduation_year">Graduation Year: </label>
+                    <input type="number" name="graduation_year" id="graduation_year" required>
+                    <br>
+                </fieldset>
+            </section>
+            <br>
+
+            <section>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <p>List of your skills:</p>
+
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="skills" id="html" value="html" checked>
+                    <br><br>
+
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="skills" id="css" value="css">
+                    <br><br>
+
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" name="skills" id="javascript" value="javascript">
+                    <br><br>
+
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="skills" id="python" value="python">
+                    <br><br>
+
+                    <label for="c++">C++</label>
+                    <input type="checkbox" name="skills" id="c++" value="c++">
+                    <br>
+                </fieldset>
+            </section>
+            <br>
+
+            <section>
+                <fieldset>
+                    <legend>Experience</legend>
+
+                    <label for="experience_year">Years of Experience: </label>
+                    <input type="number" name="experience_year" id="experience_year" min="0" max="50">
+                    <br><br>
+
+                    <label for="company_name">Previous Company Name: </label>
+                    <input type="text" name="company_name" id="company_name">
+                    <br><br>
+
+                    <label for="role">Job Role: </label>
+                    <input type="text" name="role" id="role">
+                    <br><br>
+
+                    <label for="experience">Describe your experience: </label><br>
+                    <textarea name="experience" id="experience" rows="5" cols="30">write down your experience here...</textarea>
+                    <br><br>
+
+                    <label for="resume">Upload Resume: </label>
+                    <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+                </fieldset>
+            </section>
+            <br>
+
+            <section>
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="linkedin">Linkedin Profile: </label>
+                    <input type="url" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/in/yourprofile">
+                    <br><br>
+
+                    <label for="github">Github Profile: </label>
+                    <input type="url" name="github" id="github" placeholder="https://github.com/yourprofile">
+                    <br><br>
+
+                    <label for="portfolio">Portfolio Website: </label>
+                    <input type="url" name="portfolio" id="portfolio" placeholder="https://www.yourportfolio.com">
+                    <br><br>
+
+                    <label for="reason_to_hire">Why should we hire you? </label><br>
+                    <textarea name="reason_to_hire" id="reason_to_hire" rows="5" cols="30">write a reason to hire you...</textarea>
+                    <br>
+                </fieldset>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <h3>Contact Us</h3>
+        <address>
+            <p>Address: Kathmandu, Nepal</p>
+            <p><a href="mailto:jobs@company.com">Email: jobs@company.com</a></p>
+            <p><a href="tel:9803445679">Phone: 9803445679</a></p>
+        </address>
+        <h3>© 2026 Job Application Portal. All rights reserved.</h3>
+    </footer>
+</body>
+</html>
