@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job Application Form | Job Application Portal</title>
 </head>
 <body>
+    <!-- ===== Header Section ===== -->
     <header>
+         <!-- Navigation Menu -->
         <nav>
             <a href="index.html">Home</a> |
             <a href="register.html">Apply</a> |
@@ -16,13 +18,18 @@
         <hr>
     </header>
 
+    <!-- ===== Main Content ===== -->
     <main>
+         <!-- Page Heading -->
         <h1>Apply for a Job</h1>
         <p>Fill out the job application form below to apply for your desired position. Please provide accurate information and upload your resume to increase your chances of being considered for the role.</p>
 
+        <!-- ===== Job Application Form ===== -->
         <form action="#" method="post">
             <section class="one">
                 <fieldset>
+
+                     <!-- ===== Personal Information Section ===== -->
                 <legend>Personal Information</legend>
 
                 <label for="name">Full Name: </label>
@@ -34,13 +41,14 @@
                 <br><br>
 
                 <label for="phone_number">Phone Number: </label>
-                <input type="number" id="phone_number" name="phone_number" required>
+                <input type="tel" id="phone_number" name="phone_number" required>
                 <br><br>
 
                 <label for="date_of_borth">Date of Birth: </label>
                 <input type="date" id="date_of_birth" name="date_of_birth" required>
                 <br><br>
 
+                <!-- Gender Selection -->
                 <div>
                     <label for="gender">Gender: </label>
                 <br>
@@ -67,9 +75,11 @@
                 <input type="text" id="country" name="country" required>
                 <br>
             </fieldset>
+
             </section>
             <br>
 
+            <!-- ===== Education Section ===== -->
             <section class="two">
                 <fieldset>
                     <legend>Education</legend>
@@ -93,6 +103,7 @@
             </section>
             <br>
 
+             <!-- ===== Skills Section ===== -->
             <section>
                 <fieldset>
                     <legend>Skills</legend>
@@ -121,6 +132,7 @@
             </section>
             <br>
 
+            <!-- ===== Experience Section ===== -->
             <section>
                 <fieldset>
                     <legend>Experience</legend>
@@ -141,12 +153,14 @@
                     <textarea name="experience" id="experience" rows="5" cols="30">write down your experience here...</textarea>
                     <br><br>
 
+                      <!-- Resume Upload -->
                     <label for="resume">Upload Resume: </label>
                     <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
                 </fieldset>
             </section>
             <br>
 
+             <!-- ===== Additional Information Section ===== -->
             <section>
                 <fieldset>
                     <legend>Additional Information</legend>
@@ -168,8 +182,15 @@
                     <br>
                 </fieldset>
             </section>
+
+            <br>
+                <!-- ===== Submit Button ===== -->  
+                <button type="submit">Submit Application</button>
+                <br>
         </form>
     </main>
+
+        <!-- ===== Footer Section ===== -->
     <footer>
         <hr>
         <h3>Contact Us</h3>
