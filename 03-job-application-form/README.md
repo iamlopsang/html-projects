@@ -24,3 +24,15 @@
 
     ## Multipage navigation using HTML links
     ## Clean and structured semantic HTML
+
+    ## Project Structure
+        job-application-portal/
+            │
+        ├── index.html        > Homepage (Job Listings & Intro)
+        ├── register.html     > Job Application Form (Apply Page)
+        ├── login.html        > User Login Page
+        ├── signup.html       > User Registration Page
+        └── README.md         > Project Documentation
+
+    ## Note
+        >This is a static project created for learning purposes only.
